@@ -1,6 +1,6 @@
 {
   "name": "@kamrulhassan2015/nextjs-login-widget",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A customizable login widget for Next.js 14 applications with app router",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
