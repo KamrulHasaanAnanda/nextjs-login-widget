@@ -4,9 +4,11 @@ import { babel } from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import typescript from '@rollup/plugin-typescript';
+import postcss from 'rollup-plugin-postcss';
 
 export default {
     input: 'src/index.js',
+
     output: [
         {
             file: 'dist/index.js',
@@ -23,6 +25,10 @@ export default {
         peerDepsExternal(),
         resolve(),
         commonjs(),
+        postcss({
+            extract: true,  // Outputs a separate CSS file
+            minimize: true,
+        }),
         babel({
             babelHelpers: 'bundled',
             presets: ['@babel/preset-react'],

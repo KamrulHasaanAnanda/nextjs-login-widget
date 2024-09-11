@@ -1,6 +1,6 @@
 {
   "name": "@kamrulhassan2015/nextjs-login-widget",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A customizable login widget for Next.js 14 applications with app router",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -18,7 +18,11 @@
     "build-lib": "rollup -c"
   },
   "dependencies": {
-    "lucide-react": "^0.439.0"
+    "autoprefixer": "^10.4.20",
+    "lucide-react": "^0.439.0",
+    "postcss": "^8.4.45",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tailwindcss": "^3.4.10"
   },
   "peerDependencies": {
     "next": "^14.0.0",
@@ -33,14 +37,11 @@
     "@rollup/plugin-typescript": "^8.3.3",
     "@types/node": "22.5.4",
     "@types/react": "18.3.5",
-    "autoprefixer": "^10.4.20",
     "eslint": "^8",
     "eslint-config-next": "14.2.9",
-    "postcss": "^8.4.45",
     "rollup": "^2.75.6",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
-    "tailwindcss": "^3.4.10",
     "typescript": "^4.7.4"
   },
   "keywords": [
