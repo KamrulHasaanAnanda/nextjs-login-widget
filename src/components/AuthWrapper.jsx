@@ -1,5 +1,6 @@
 "use client"
-import { useState } from 'react';
+
+import React, { useState } from 'react';
 import LoginComponent from './LoginComponent';
 import DisplayComponent from './DisplayComponent';
 
