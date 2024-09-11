@@ -1,34 +1,46 @@
 {
   "name": "@kamrulhassan2015/nextjs-login-widget",
-  "version": "1.0.0",
-  "description": "A customizable login widget for Next.js applications",
-  "main": "src/LoginWidget.js",
+  "version": "2.0.0",
+  "description": "A customizable login widget for Next.js 14 applications with app router",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepublishOnly": "npm run build-lib",
+    "build-lib": "tsup src/index.js --format cjs,esm --dts"
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.6",
-    "next": "14.2.9",
-    "react": "^18",
-    "react-dom": "^18"
+    "lucide-react": "^0.439.0"
+  },
+  "peerDependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "eslint": "^8",
     "eslint-config-next": "14.2.9",
     "postcss": "^8.4.45",
-    "tailwindcss": "^3.4.10"
+    "tailwindcss": "^3.4.10",
+    "tsup": "^7.0.0",
+    "typescript": "^5.0.0"
   },
   "keywords": [
     "nextjs",
     "react",
     "login",
     "widget",
-    "tailwindcss"
+    "tailwindcss",
+    "app-router"
   ],
   "author": "Kamrul Hassan",
   "license": "MIT",
