@@ -1,7 +1,9 @@
 {
-  "name": "my",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@kamrulhassan2015/nextjs-login-widget",
+  "version": "1.0.0",
+  "description": "A customizable login widget for Next.js applications",
+  "main": "src/LoginWidget.js",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "next": "14.2.9",
     "react": "^18",
     "react-dom": "^18"
@@ -19,5 +22,18 @@
     "eslint-config-next": "14.2.9",
     "postcss": "^8.4.45",
     "tailwindcss": "^3.4.10"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "login",
+    "widget",
+    "tailwindcss"
+  ],
+  "author": "Kamrul Hassan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KamrulHasaanAnanda/nextjs-login-widget.git"
   }
 }
